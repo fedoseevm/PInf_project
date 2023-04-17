@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebusy - Bezpieczeństwo w sieci</title>
+    <link rel="stylesheet" href="podstrony-style.css">
+</head>
+<body>
+  <a class="pasek" href="../index.html">
+    <img class="logo" src="../media/uvz.png">
+  </a>
+    <div class="rebus">
+        <div class="img-row">
+            <img src="rebusy/rebus_easy/Cyber - wybór.png" alt="" class="rebus-part">
+            <img src="rebusy/rebus_easy/moc - noc.png" alt="" class="rebus-part">
+            <img src="rebusy/rebus_easy/prze - brzeg.png" alt="" class="rebus-part">
+        </div>
+        <div class="answer-block">
+            <form>
+                <label for="rebus1-answer" class="answer-label">Twoja odpowiedź:</label>
+                <input type="text" id="rebus1-answer" class="rebus-answer" name="answer">
+                <button type="button" onclick="checkAnswer1()">Sprawdź</button>
+            </form>
+        </div>
+    </div>
+    <div class="rebus">
+        <div class="img-row">
+            <img src="rebusy/rebus_hard/Prawa - trasa.png" alt="" class="rebus-part" style="margin-right: 10vw;">
+            <img src="rebusy/rebus_hard/auto - dno.png" alt="" class="rebus-part">
+            <img src="rebusy/rebus_hard/rskie - cień.png" alt="" class="rebus-part">
+        </div>
+        <div class="answer-block">
+            <form>
+                <label for="rebus2-answer" class="answer-label">Twoja odpowiedź:</label>
+                <input type="text" id="rebus2-answer" class="rebus-answer" name="answer">
+                <button type="button" onclick="checkAnswer2()">Sprawdź</button>
+            </form>
+        </div>
+    </div>
+    <div class="autors">
+      Maksim Fedoseev & Roman Denisov & Drobotun
+  </div>
+</body>
+    <script>
+        function checkAnswer1() {
+          var answerInput = document.getElementById("rebus1-answer");
+          var answer = answerInput.value.toLowerCase();
+          
+          if (answer === "cyberprzemoc") {
+            answerInput.classList.remove("incorrect");
+            answerInput.classList.add("correct");
+          } else {
+            answerInput.classList.remove("correct");
+            answerInput.classList.add("incorrect");
+          }
+        }
+
+        function checkAnswer2() {
+          var answerInput = document.getElementById("rebus2-answer");
+          var answer = answerInput.value.toLowerCase();
+          
+          if (answer === "prawa autorskie") {
+            answerInput.classList.remove("incorrect");
+            answerInput.classList.add("correct");
+          } else {
+            answerInput.classList.remove("correct");
+            answerInput.classList.add("incorrect");
+          }
+        }
+    </script>
+</html>

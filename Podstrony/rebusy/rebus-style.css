@@ -1,0 +1,66 @@
+html, body {
+    margin: unset;
+    padding: unset;
+}
+
+.img-row {
+    width: 100%;
+    display: inline-flex;
+    gap: 5vw;
+    justify-content: center;
+    margin: 15vh 0 15vh 0;
+}
+
+.rebus {
+    margin-bottom: 10vh;
+}
+
+.rebus-part {
+    width: 20vw;
+}
+
+.answer-label {
+    font-size: 24px;
+}
+
+.answer-block {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.rebus-answer {
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0 3vw 0 3vw;
+    font-size: 24px;
+  }
+
+button {
+    font-size: 24px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+  
+.correct {
+    border: 3px solid green;
+    border-radius: 8px;
+    background-color: lightgreen;
+}
+  
+.incorrect {
+    border: 3px solid red;
+    border-radius: 8px;
+    background-color: lightcoral;
+}

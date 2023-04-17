@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zgadywanki - Bezpieczeństwo w sieci</title>
+    <link rel="stylesheet" href="podstrony-style.css">
+  </head>
+  <body>
+    <a class="pasek" href="../index.html">
+      <img class="logo" src="../media/uvz.png">
+  </a>
+<br>
+<br>
+    <div class="zgadywanka">
+      <h1>Co to jest, gdy atakuje twoje urządzenie, instalując szkodliwe oprogramowanie?</h1>
+      <form class="answer-block">
+        <label for="zgadywanka1-answer" class="answer-label">Odpowiedź:</label>
+        <input type="text" id="zgadywanka1-answer" class="zgadywanka-answer" name="zgadywanka1-answer">
+        <button type="button" onclick="checkAnswer1()">Sprawdź</button>
+      </form>
+    </div>
+    <div class="zgadywanka">
+      <h1>Jak nazywa się metoda ataku cybernetycznego, która polega na podszywaniu się pod wiarygodne źródło w celu wyłudzenia poufnych informacji, takich jak hasła, numery kart kredytowych, czy dane osobowe?</h1>
+      <form class="answer-block">
+        <label for="zgadywanka2-answer" class="answer-label">Odpowiedź:</label>
+        <input type="text" id="zgadywanka2-answer" class="zgadywanka-answer" name="zgadywanka2-answer">
+        <button type="button" onclick="checkAnswer2()">Sprawdź</button>
+      </form>
+    </div>
+    <div class="autors">
+        Maksim Fedoseev & Roman Denisov & Drobotun
+    </div>
+    <script>
+      function checkAnswer1() {
+          var answerInput = document.getElementById("zgadywanka1-answer");
+          var answer = answerInput.value.toLowerCase();
+          
+          if (answer === "wirus") {
+            answerInput.classList.remove("incorrect");
+            answerInput.classList.add("correct");
+          } else {
+            answerInput.classList.remove("correct");
+            answerInput.classList.add("incorrect");
+          }
+        }
+      function checkAnswer2() {
+          var answerInput = document.getElementById("zgadywanka2-answer");
+          var answer = answerInput.value.toLowerCase();
+          
+          if (answer === "phishing") {
+            answerInput.classList.remove("incorrect");
+            answerInput.classList.add("correct");
+          } else {
+            answerInput.classList.remove("correct");
+            answerInput.classList.add("incorrect");
+          }
+        }
+    </script>
+  </body>
+</html>
